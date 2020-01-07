@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserData">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--new version for profile view-->
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/profileTab"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="25dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/imageViewRelay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/userimage"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+
+                        </RelativeLayout>
+
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/imageViewRelay"
+                            >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:id="@+id/username"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:textSize="15dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="username"
+                                    />
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:id="@+id/usercompany"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="2dp"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:textColor="#999999"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Organization"
+                                    />
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:id="@+id/userloc"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="2dp"
+                                    android:textSize="13dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#999999"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="India/Andhra Pradesh/Tirupati"
+                                    />
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/followersno"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="244B+"
+                                            />
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Followers"
+                                            />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/followingno"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="1.4B+"
+                                            />
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Following"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/reponum"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="10dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="18dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="1.1M+"
+                                            />
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:gravity="center_horizontal"
+                                            android:paddingTop="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#ACACAC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Repositories"
+                                            />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="10dp"
+                                    android:background="#F3F3F3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:id="@+id/biohead"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="About Me"
+                                        />
+
+                                    <TextView
+                                        android:layout_below="@id/biohead"
+                                        android:layout_weight="1"
+                                        android:id="@+id/summary"
+                                        android:layout_gravity="center_vertical|end"
+                                        android:textColor="#606060"
+                                        android:textSize="14dp"
+                                        android:maxLines="5"
+                                        android:paddingRight="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+
+                                </RelativeLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+    <!--list view for repo tab-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/repocode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:drawableStart="@drawable/search"
+            android:id="@+id/reposearch"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:hint="search"
+            android:background="@drawable/searchbackg"
+            android:inputType="textVisiblePassword"
+            tools:ignore="RtlCompat" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/reposearch"
+            android:id="@+id/repoTab"
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/navigation_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

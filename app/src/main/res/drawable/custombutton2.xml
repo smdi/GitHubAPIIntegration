@@ -1,0 +1,12 @@
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/custombutton2pressed"
+        android:state_pressed="true"
+        />
+
+    <item android:drawable="@drawable/custombutton2unpressed"
+        android:state_pressed="false"
+        />
+
+</selector>
