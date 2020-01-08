@@ -9,11 +9,11 @@ Contains about search bar you have to enter username
 ```
 
 
-![picture](images/1.png)
+![picture](images/1.jpeg)
 
 
 
-![picture](images/2.png) 
+![picture](images/2.jpeg) 
 
 
 ```
